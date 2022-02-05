@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*Funçoes para vetores 
+        -Contagem 
+        -Cadastro
+        -Alteração
+        -Excluir dados
+
+        */
+
+        let nomes = ["Larissa", "Marcelo", "Natalia", "Orlando", "Paloma"]
+        nomes.push("Rebeca");
+        console.log(nomes)
+        nomes.push("Gerundia");
+        console.log(nomes)
+
+        nomes[6] = "Patricia"
+        nomes[4] = "Josefa"
+
+        console.log(nomes)
+
+        //-Excluir dados
+        nomes.splice(4,1)
+        console.log(nomes)
+
+      
+        //Exibindo os nomes com for 
+        for(let indice = 0; indice < nomes.length; indice++){
+            document.write(indice + " " + nomes[indice] + "<br>")
+        }
+
+        //Informar a quantidade de dados do array 
+        document.write("Há " + nomes.length + " nomes no vetor.")
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

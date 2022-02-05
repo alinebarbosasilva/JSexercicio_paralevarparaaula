@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo Lógica na Apex</title>
+    <script>
+        let produto = prompt("Digite o nome do produto: ")
+        let valor = parseFloat(prompt("Digite o valor do produto: "))
+
+        let segmentoEscolhido = prompt("Digite o segmento que deseja selecionar: \n"+
+        "Vestuario - Digite 1 \n" +
+        "Eletronico - Digite 2 \n" +
+        "Alimenticio - Digite 3")
+
+        let descontoVestuario = (valor * 5) / 100 
+        let descontoEletronico = (valor * 8) / 100 
+        let descontoAlimenticio = (valor * 10) / 100 
+
+        let valorDescontoFinal1 = valor - descontoVestuario
+        let valorDescontoFinal2 = valor - descontoEletronico
+        let valorDescontoFinal3 = valor - descontoAlimenticio
+
+
+        switch(segmentoEscolhido){
+            case "1":
+                document.write("Você selecionou o segmento vestuário e terá 5% de desconto R$"+descontoVestuario+" no " +produto+ " pagando R$ " + valorDescontoFinal1+ ".")
+            break
+            case "2":
+                 document.write("Você selecionou o segmento eletrônico e terá 8% de desconto R$"+descontoEletronico+" no " +produto+ " pagando R$" +valorDescontoFinal2 + ".")
+            break
+            case "3":
+                 document.write("Você selecionou o segmento alimenticio e terá 10% de desconto R$"+descontoAlimenticio+" no "+produto+" pagando R$" +valorDescontoFinal3+ ".")
+            break
+            default:
+            document.write("Nenhuma opção foi selecionada.")
+         }
+        
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
+
+
+
+

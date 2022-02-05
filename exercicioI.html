@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aprendendo Lógica na Apex</title>
+  <script>
+    let nota1 = parseFloat(prompt("Digite a nota da primeira prova"))
+    let nota2 = parseFloat(prompt("Digite a nota da segunda prova"))
+    let nota3 = parseFloat(prompt("Digite a nota da terceira prova"))
+
+    let faltas = parseInt(prompt("Digite suas faltas"))
+
+    let media = (nota1 + nota2 + nota3) / 3
+
+      // if(media >= 10 && faltas <= 15){
+      //   document.write("Aprovado com media " +media+ " e total de faltas foram " +faltas+ ".")
+      // }else if(media >= 6.9 && faltas <= 15){
+      //   document.write("Em exame com media " +media+ " e total de faltas foram " +faltas+ ".")
+      // }else if(media <= 4.9 && faltas >= 15){
+      //   document.write("Reprovado com media " +media+ " e total de faltas foram " +faltas+ ".")
+      // }else{
+      //   document.write("Inválido")
+      // }
+
+    if(faltas > 15){
+      document.write("Reprovado")
+    }else if(media >= 10){
+      document.write("Aprovado com media " +media)
+    }else if( media >= 6.9){
+      document.write("Em exame com media " +media)
+    }else{
+      document.write("Reprovado com media " +media )
+    }
+
+
+  </script>
+</head>
+<body>
+
+</body>
+</html>

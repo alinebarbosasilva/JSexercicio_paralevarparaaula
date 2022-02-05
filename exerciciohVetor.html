@@ -1,0 +1,41 @@
+<!-- Crie um vetor que peça cinco números, em seguida exiba os cinco números
+informados e mostre qual é o menor número e o maior número. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aprendendo Lógica na Apex</title>
+  <script>
+    let numeros = []
+    let maior_numero = -9999999999999999999999999999999999
+    let menor_numero = 99999999999999999999999999999999999
+
+    for(let i = 0; i < 5; i++){
+      numeros.push(parseInt(prompt("Informe um número: ")))
+      }
+
+    for(let i = 0; i < 5; i++){
+    if(numeros[i] > maior_numero){
+      document.write("Os números são: " +numeros[i])
+    }
+    maior_numero = numeros[i] 
+
+    if(numeros[i] < menor_numero){
+    menor_numero = numeros[i] 
+    document.write("O maior valor é " +maior_numero+ "e o menor valor é " +menor_numero)
+    }
+  }
+
+    
+
+    
+
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

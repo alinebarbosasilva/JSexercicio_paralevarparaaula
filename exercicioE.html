@@ -1,0 +1,61 @@
+<!-- e) O usuário informa o horário atual no Brasil (apenas hora), em seguida
+informa um país. Retorne o horário daquele país se baseando pela hora
+informada. Cadastre ao menos três países diferentes. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+
+      let horarioBrasil = parseInt(prompt('Digite o horário atual no Brasil: '))
+
+      let selecao_paises = prompt(
+        'Infome o país que gostaria de saber o horário: \n' +
+          'Japão - digite 1 \n' +
+          'Portugal - digite 2 \n' +
+          'Russia - digite 3 '
+      )
+
+      diferenca_japao = 12
+      diferenca_portugal = 4
+      diferenca_russia = 6
+
+          if (selecao_paises == '1') {
+         hora_japao = horarioBrasil + diferenca_japao
+             if (hora_japao > 24) 
+          hora_japao = hora_japao - 24
+          document.write(
+            'A hora atual no Brasil é ' +
+              horarioBrasil +
+              ' e no Japão é : ' +
+              hora_japao
+          )} else if (selecao_paises == '2') {
+           hora_portugal = horarioBrasil + diferenca_portugal
+             if (hora_portugal > 24)
+            hora_japao = hora_japao - 24
+              document.write(
+              'A hora atual no Brasil é ' +
+                horarioBrasil +
+                ' e no Portugal é : ' +
+                hora_portugal
+            )}else if (selecao_paises == '3') {
+             hora_russia = horarioBrasil + diferenca_russia
+              if (hora_russia > 24) 
+              hora_russia = (hora_russia - 24)
+              document.write(
+                'A hora atual no Brasil é ' +
+                  horarioBrasil +
+                  ' e no Russia é : ' +
+                  hora_russia
+              )} else {
+              document.write('A opção informada está Inválida.')
+            }
+              
+    </script>
+  </head>
+  <body></body>
+</html>

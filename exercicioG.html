@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aprendendo Lógica na Apex</title>
+  <script>
+   /* let moeda01 = 0.01 * parseInt(prompt("Insira a quantidade de moedas R$ 0.01"))  
+    let moeda02 = 0.05 * parseInt(prompt("Insira a quantidade de moedas R$ 0.05")) 
+    let moeda03 = 0.10 * parseInt(prompt("Insira a quantidade de moedas R$ 0.10")) 
+    let moeda04 = 0.25 * parseInt(prompt("Insira a quantidade de moedas R$ 0.25")) 
+    let moeda05 = 0.50 * parseInt(prompt("Insira a quantidade de moedas R$ 0.50")) 
+    let moeda06 = 1.00 * parseInt(prompt("Insira a quantidade de moedas R$ 1.00")) 
+
+    let calculo = moeda01 + moeda02 + moeda03 + moeda04 + moeda05 + moeda06
+
+    alert("O total de é de R$ " +calculo.toFixed(2)+ ".")*/
+
+
+    let moeda01 = parseInt(prompt("Insira a quantidade de moedas R$ 0.01"))  
+    let moeda02 = parseInt(prompt("Insira a quantidade de moedas R$ 0.05")) 
+    let moeda03 = parseInt(prompt("Insira a quantidade de moedas R$ 0.10")) 
+    let moeda04 = parseInt(prompt("Insira a quantidade de moedas R$ 0.25")) 
+    let moeda05 = parseInt(prompt("Insira a quantidade de moedas R$ 0.50")) 
+    let moeda06 = parseInt(prompt("Insira a quantidade de moedas R$ 1.00")) 
+
+let total = moeda01 * 0.01
+    total += moeda02 * 0.05
+    total += moeda03 * 0.10
+    total += moeda04 * 0.25
+    total += moeda05 * 0.50
+    total += moeda06 * 1.00
+  
+    
+    let calculo = moeda01 + moeda02 + moeda03 + moeda04 + moeda05 + moeda06
+
+    document.write("R$ " + total.toFixed(2).toString().replace(".",","))
+
+
+  </script>
+</head>
+<body>
+  
+
+</body>
+</html>

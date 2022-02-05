@@ -1,0 +1,38 @@
+<!-- b) Desenvolva um sistema que o usuário informa cinco números através do comando
+prompt, em seguida exiba os valores informados e mostre a soma desses valores. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+
+    let numeros = []
+
+    //Um for só para pedir o numero
+    for(let contador = 1; contador <= 5; contador++){
+      numeros.push(parseInt(prompt("Informe um número")))
+    }
+
+    // //Um for só para exibir os valores informados e a soma
+    let calculo = 0
+
+    for(let i = 0; i < 5; i++){
+      calculo += numeros[i]
+      document.write(numeros[i] + " ")
+      
+    }
+
+    document.write("e a soma dos valores é " +calculo)
+  
+
+    
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

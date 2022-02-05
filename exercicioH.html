@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aprendendo Lógica na Apex</title>
+  <script>
+    let numero1 = parseInt(prompt("Informe o primeiro número"))
+    let numero2 = parseInt(prompt("Informe o segundo número"))
+
+    let escolha = prompt("Digite o cálculo que deseja realizar - soma, subtracao, divisao, multiplicacao :" )
+
+    let soma = numero1 + numero2
+    let subtracao  = numero1 - numero2
+    let multiplicacao =  numero1 * numero2
+    let divisao =  numero1 / numero2
+
+    if(escolha == "soma"){
+      document.write("Você escolheu somar e o resultado é " +soma+ ".")
+    }else if(escolha == "subtracao"){
+      document.write("Você escolheu subtrair e o resultado é " +subtracao+ ".")
+    }else if(escolha == "multiplicacao"){
+      document.write("Você escolheu multiplicar e o resultado é " +multiplicacao+ ".")
+    }else if(escolha == "divisao"){
+      document.write("Você escolheu dividir e o resultado é " +divisao+ ".")
+    }else{
+      document.write("Escolha Inválida")
+    }
+
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

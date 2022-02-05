@@ -1,0 +1,43 @@
+<!-- f) Peça sete números, em seguida exiba a soma desses valores, a média e quantos
+números são maiores ou iguais a média -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aprendendo Lógica na Apex</title>
+  <script>
+    let numeros = []
+    let soma = 0
+    
+
+    //Um for para pedir o numero 7x
+    for(let i = 0; i < 7; i++){
+      numeros.push(parseInt(prompt("Informe um número: ")))
+    }
+
+    //Um for para somar os números inseridos no primeiro for para o index e fazer a media
+    for(let index = 0; index < 7; index++){
+      soma+= numeros[index]
+      let media = soma / 7
+    }
+
+    let numero_maior_igual_media = 0
+    //Um for para verificar se o nº no index é >= a media e acrescentar na variavel
+    for(let index = 0; index < 7; index++){
+      if(numeros[index] >= media){
+        numero_maior_igual_media += 1
+      }
+    }
+
+    document.write("A soma dos números resulta em " +soma+ " e a media é " +media+ " e a quantidade de números maior ou igual a média é " +numero_maior_igual_media) 
+
+    
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo Lógica na Apex</title>
+    <script>
+        let valor = parseInt(prompt("Digite o valor que gostaria que converter: "))
+
+        let escolha = prompt("Seleciona qual a conversão: \n" + 
+        "Real => Dolar - Digite 1 \n" +
+        "Dolar => Real - Digite 2 \n" +  
+        "Real => Euro - Digite 3 \n" +
+        "Euro => Real - Digite 4 " )
+
+        let realDolar = valor * 0.19
+        let dolarReal = valor * 5.37
+        let realEuro = valor * 0.17
+        let euroReal = valor * 5.98
+
+        switch(escolha){
+            case "1":
+                document.write("Real => Dolar - R$ " +realDolar)
+            break
+            case "2":
+            document.write("Dolar => Real - R$ " +dolarReal)
+            break
+            case "3":
+                document.write("Real => Euro - € " +realEuro)
+            break
+            case "4":
+                document.write("Euro => Real - R$ " +euroReal)
+            break
+            default:
+                document.write("Nenhuma opção foi selecionada.")
+        }
+
+        
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!-- Crie um sistema de votação para três candidatos. O eleitor poderá selecionar
+um dos três nomes, em seguida será contabilizado o voto para o candidato -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aprendendo Lógica na Apex!</title>
+    <script>
+      let escolha = prompt(
+        'Escolha um candidado : \n' +
+          'Obama - digite 1 \n' +
+          'Lula - digite 2 \n' +
+          'Biden - digite 3'
+      )
+
+      let votoCandidato = 0
+
+      switch (escolha) {
+        case '1':
+          document.write(
+            'Você escolheu o candidato: Obama e contabilizou ' +
+              (someCadidato = votoCandidato + 1)+
+              ' voto.'
+          )
+          break
+        case '2':
+          document.write(
+            'Você escolheu o candidato: Lula e contabilizou ' +
+              (someCadidato = votoCandidato + 1)+
+              ' voto.'
+          )
+          break
+        case '3':
+          document.write(
+            'Você escolheu o candidato: Biden e contabilizou ' +
+            (someCadidato = votoCandidato + 1) +
+              ' voto.'
+          )
+          break
+        default:
+          document.write('Candidato Inválido')
+      }
+    </script>
+  </head>
+  <body></body>
+</html>

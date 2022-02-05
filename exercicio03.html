@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 03</title>
+    <script>
+        
+        let produto1 = parseInt(prompt("Valor pizza"))
+        let produto2 = parseInt(prompt("Valor Pão de queijo"))
+        let produto3 = parseInt(prompt("Valor Macarrão"))
+        let produto4 = parseInt(prompt("Valor pizza doce"))
+
+        let soma = produto1 + produto2 + produto3 + produto4 
+
+        let dinheiro = parseInt(prompt("O valor total é de " +soma+ " quanto você tem de dinheiro?"))
+
+        let troco = dinheiro - soma
+    
+        if(dinheiro >= soma){
+            alert("Seu troco é de " + (dinheiro - soma))
+        }else{
+            alert("Ta de sacanagem")
+        }
+
+        
+
+            
+    
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
